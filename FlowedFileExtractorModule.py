@@ -14,7 +14,7 @@ else:
 os.chdir('FlowedFileReport')
 
 # open workbook
-wb = openpyxl.load_workbook(report.xlsx, data_only)
+wb = openpyxl.load_workbook("report.xlsx")
 wb.active()
 sh = wb['Sheet1']
 type(sh)
